@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Main page</title>
+    {% load staticfiles %}
+    <link type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet"/>    
+  </head>
+  <body>
+    <h1>List or users</h1>
+    <a href="{% url 'users' %}">Users</a><br/>
+    <a href="{% url 'rooms' %}">Rooms</a><br/><br/>
+
+    {% block content %}{% endblock %}<br/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.js' %}"></script>
+    <script src="{% static 'bootstrap/js/ajax.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>  
+  </body>
+</html>

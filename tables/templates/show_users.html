@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <table border="2">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Date of employment</th>
+        {%for user in list_users %}
+        <tr>
+            <td>{{user.id}}</td>
+            <td class="edit">{{user.name}}</td>
+            <td class="edit">{{user.salary}}</td>
+            <td class="edit">{{user.date_admit}}</td>
+        </tr>
+        {% endfor %}
+    </table><br/>
+
+{% block add_user %}
+
+<a href="{% url 'add' %}">Add user</a>
+
+{% endblock %}
+{% endblock %}
+

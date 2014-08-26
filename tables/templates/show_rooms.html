@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <table border="2">
+        <tr>
+            <th>Number</th>
+            <th>Department</th>
+            <th>Capacity</th>
+        {% for room in list_rooms %}
+        <tr>
+            <td id="{{room.id}}">{{room.number}}</td>
+            <td id="{{room.id}}">{{room.department}}</td>
+            <td id="{{room.id}}">{{room.capacity}}</td>
+        </tr>
+        {% endfor %}
+    </table><br />
+
+{% block add_room %}
+
+    <a href="{% url 'add_room' %}">Add room</a>
+
+{% endblock %}
+{% endblock %}
