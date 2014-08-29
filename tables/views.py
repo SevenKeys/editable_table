@@ -2,7 +2,7 @@ from django.shortcuts import render
 from models import User,Room
 #from django.forms import UserForm
 from django.core.context_processors import csrf
-from django.http import HttpResponseRedirect,HttpResponse
+from django.http import HttpResponseRedirect, HttpResponse, Http404
 
 def show_rooms(request):
     list_rooms = Room.objects.all()
@@ -24,22 +24,23 @@ def add_room(request):
     args['list_rooms']=list_users
     return render(request,'add_room.html',args)
 
-def change_data(request):
-    rooms = Room.objects.all()
+def change_data(request, room_id):
+    try:
+        room = Room.objects.get(id=room_id)
+    except Room.DoesNotExists:
+        raise Http404
     if request.method == 'POST':
-        return HttpResponse("It works!")
-        _id = request.POST['_id']
         old_data = request.POST['old_data']
         new_data = request.POST['new_data']
-        for room in rooms:
-            if room.id == _id:
-                if room.number == old.data:
-                    room.number = new_data
-                elif room.department == old_data:
-                    room.department = new_data
-                elif room.capacity == old_data:
-                    room.capacity = new_data
-                room.save()
+        if room.id == int(room_id):
+            if room.number == int(old_data):
+                room.number = int(new_data)
+            elif room.department == old_data:
+                room.department = new_data
+            elif room.capacity == int(old_data):
+                room.capacity = int(new_data)
+            room.save()
+        return HttpResponse("It works!")
     return render(request,'show_rooms.html',{'data':new_data})
                         
 
