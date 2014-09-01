@@ -1,4 +1,4 @@
-Editable table. Consist of fields user can change on client side. For this perpose AJAX used.
+Editable table. Consist of fields user can change on client side. For this purpose AJAX used.
 
 You need:
 
