@@ -1,0 +1,556 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"c",
+				"capacity"
+			],
+			[
+				"da",
+				"department"
+			],
+			[
+				"S",
+				"SearchQuerySet"
+			],
+			[
+				"i",
+				"indexes"
+			],
+			[
+				"W",
+				"WHOOSH_INDEX"
+			],
+			[
+				"iframe_",
+				"iframe_tree"
+			],
+			[
+				"iframe",
+				"iframe_page"
+			],
+			[
+				"a",
+				"article_page"
+			],
+			[
+				"if",
+				"iframe_page"
+			],
+			[
+				"src",
+				"src_tree"
+			],
+			[
+				"s",
+				"src_page"
+			],
+			[
+				"article",
+				"article_doc"
+			],
+			[
+				"p",
+				"parse_sites"
+			],
+			[
+				"f",
+				"from_email"
+			],
+			[
+				"m",
+				"message"
+			],
+			[
+				"se",
+				"send_mail"
+			],
+			[
+				"e",
+				"EMAIL_HOST_USER"
+			],
+			[
+				"save",
+				"save_it"
+			],
+			[
+				"E",
+				"EMAIL_HOST"
+			],
+			[
+				"u",
+				"urlpatterns"
+			],
+			[
+				"deb",
+				"DEBUG"
+			],
+			[
+				"B",
+				"BASE_DIR"
+			],
+			[
+				"r",
+				"registerAdmin"
+			],
+			[
+				"U",
+				"UserProfile"
+			],
+			[
+				"re",
+				"register_user"
+			],
+			[
+				"v",
+				"views"
+			],
+			[
+				"d",
+				"django_test"
+			],
+			[
+				"django",
+				"django_test"
+			],
+			[
+				"h",
+				"HttpResponseRedirect"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "tables/views.py",
+			"settings":
+			{
+				"buffer_size": 2248,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tables/templates/add_room.html",
+			"settings":
+			{
+				"buffer_size": 63,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "tables/forms.py",
+			"settings":
+			{
+				"buffer_size": 348,
+				"line_ending": "Windows",
+				"name": "from django import forms"
+			}
+		},
+		{
+			"file": "tables/models.py",
+			"settings":
+			{
+				"buffer_size": 541,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tables/templates/show_rooms.html",
+			"settings":
+			{
+				"buffer_size": 640,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "tables/templates/add_user.html",
+			"settings":
+			{
+				"buffer_size": 417,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 81.0,
+		"selected_items":
+		[
+			[
+				"Snippet: ",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"Snippet: lo",
+				"Snippet: For Loop"
+			],
+			[
+				"install package",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 304.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/projects/Kreyol/static/templates/ajax-search.html",
+		"/D/projects/Kreyol/static/static/js/ajax.js",
+		"/D/projects/Kreyol/static/templates/footer.html",
+		"/D/projects/Kreyol/static/templates/base.html",
+		"/D/projects/Kreyol/static/templates/nav1.html",
+		"/D/projects/Kreyol/static/templates/Marketing.html",
+		"/D/projects/django_test/article/search_indexes.py",
+		"/D/projects/django_test/article/urls.py",
+		"/D/projects/django_test/article/models.py",
+		"/D/projects/django_test/templates/search/indexes/article/article_text.txt",
+		"/D/projects/django_test/django_test/urls.py",
+		"/D/projects/django_test/templates/base.html",
+		"/D/projects/django_test/django_test/settings.py",
+		"/D/projects/django_test/templates/search/indexes/article/search_text.txt",
+		"/D/projects/Kreyol/requirements.txt",
+		"/C/Documents and Settings/Admin/Application Data/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/D/parse/xml_parser.py",
+		"/D/parse/xpath_parser.py",
+		"/D/parse/films_excel.xlsx",
+		"/D/parse/json_parse.py",
+		"/D/parser/parse.py",
+		"/D/parser/site_parser.py",
+		"/D/projects/it_book/it_book/email_info.py",
+		"/D/projects/it_book/registr/models.py",
+		"/D/projects/it_book/registr/templates/registr.html",
+		"/D/projects/it_book/it_book/urls.py",
+		"/D/projects/it_book/static/css/bootstrap.min.css",
+		"/D/projects/it_book/registr/forms.py",
+		"/D/projects/it_book/it_book/settings.py",
+		"/D/projects/it_book/registr/admin.py",
+		"/D/projects/django_test/article/forms.py",
+		"/D/projects/django_test/article/templates/create_article.html",
+		"/D/projects/minimal-django-file-upload-example/src/for_django_1-6/myproject/myproject/myapp/models.py",
+		"/C/Python27/mike_gibbert/article/templates/article.html",
+		"/C/Python27/mike_gibbert/article/templates/articles.html",
+		"/D/projects/django_test/django_test/views.py",
+		"/D/projects/django_test/article/templates/article.html",
+		"/D/projects/django_test/article/views.py",
+		"/C/Python27/mike_gibbert/article/templates/create_article.html",
+		"/C/projects/django_test/article/forms.py",
+		"/C/projects/django_test/article/templates/articles.html",
+		"/C/projects/django_test/article/templates/article.html",
+		"/C/projects/django_test/userprofile/views.py",
+		"/C/projects/django_test/userprofile/forms.py",
+		"/C/projects/django_test/userprofile/models.py",
+		"/C/projects/django_test/templates/loggedin.html",
+		"/C/projects/django_test/userprofile/templates/profile.html",
+		"/C/projects/django_test/templates/invalid_login.html",
+		"/C/projects/django_test/django_test/views.py",
+		"/C/projects/django_test/article/views.py",
+		"/C/projects/django_test/article/templates/create_article.html",
+		"/C/projects/django_test/article/models.py",
+		"/C/projects/django_test/templates/register.html",
+		"/C/projects/django_test/django_test/forms.py",
+		"/C/projects/django_test/django_test/urls.py",
+		"/C/projects/django_test/templates/register_success.html",
+		"/C/projects/django_test/static/js/ajax.js",
+		"/C/projects/django_test/templates/base.html",
+		"/C/projects/django_test/article/templates/ajax_search.html",
+		"/C/projects/django_test/templates/login.html",
+		"/C/Python27/mike_gibbert/django_test/views.py",
+		"/C/projects/django_test/templates/logout.html",
+		"/C/projects/django_test/article/urls.py",
+		"/C/projects/django_test/article/api.py",
+		"/C/projects/django_test/django_test/settings.py",
+		"/C/Python27/mike_gibbert/django_test/settings.py"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "tables/views.py",
+					"settings":
+					{
+						"buffer_size": 2248,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								723,
+								723
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 60.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "tables/templates/add_room.html",
+					"settings":
+					{
+						"buffer_size": 63,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								55,
+								55
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "tables/forms.py",
+					"settings":
+					{
+						"buffer_size": 348,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								262,
+								262
+							]
+						],
+						"settings":
+						{
+							"auto_name": "from django import forms",
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "tables/models.py",
+					"settings":
+					{
+						"buffer_size": 541,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								252,
+								252
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "tables/templates/show_rooms.html",
+					"settings":
+					{
+						"buffer_size": 640,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								477,
+								477
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "tables/templates/add_user.html",
+					"settings":
+					{
+						"buffer_size": 417,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 205.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"search_text",
+				"templates/search/indexes/article/article_text.txt"
+			],
+			[
+				"article_text",
+				"templates/search/indexes/article/search_text.txt"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 189.0,
+	"status_bar_visible": true
+}

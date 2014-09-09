@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from models import User,Room
-#from django.forms import UserForm
+from forms import RoomForm
 from django.core.context_processors import csrf
 from django.http import HttpResponseRedirect, HttpResponse, Http404
 
@@ -12,17 +12,20 @@ def show_rooms(request):
 def add_room(request):
     list_rooms = Room.objects.order_by('number')
     if request.POST:
-        form = UserForm(request.POST)
+        form = RoomForm(request.POST)
         if form.is_valid():
             form.save()
             return HttpResponseRedirect('/success/')
     else:
-        form=UserForm()
+        form = RoomForm()
     args={}
     args.update(csrf(request))
     args['form']=form
-    args['list_rooms']=list_users
+    args['list_rooms'] = list_rooms
     return render(request,'add_room.html',args)
+
+def success(request):
+    return render(request,'success.html')
 
 def change_data(request, room_id):
     try:
@@ -64,10 +67,7 @@ def add_user(request):
     args['list_users']=list_users
     return render(request,'add_user.html',args)
 
-def success(request):
-    list_users=User.objects.order_by('date_admit')
-    return render(request,'success.html',
-                  {'list_users':list_users})
+
 
 
         
