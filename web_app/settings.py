@@ -22,11 +22,11 @@ TEMPLATE_DIRS = os.path.join(BASE_DIR, 'templates').replace('\\','/')
 SECRET_KEY = 'kh_#5d!rb5k8az-h6-y(t3_yj2wgrx)0nc*ua00v3yk%*p10na'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-TEMPLATE_DEBUG = True
+TEMPLATE_DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['editabletable.com']
 
 
 # Application definition
@@ -61,7 +61,7 @@ WSGI_APPLICATION = 'web_app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'db.tables',
+        'NAME': '/var/www/env/Editable_table/db.tables',
     }
 }
 
@@ -84,8 +84,13 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = ('static',)
+STATIC_ROOT = '/var/www/env/Editable_table/static/'
 
-SESSION_COOKIE_SECURE = False
-SESSION_SAVE_EVERY_REQUEST = True
-CSRF_COOKIE_SECURE = False
+STATICFILES_DIRS = (
+	os.path.join(os.path.dirname(BASE_DIR),'static'),
+)
+
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = '/var/www/env/Editable_table/media/'
+

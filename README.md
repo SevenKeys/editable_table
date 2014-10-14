@@ -2,18 +2,22 @@ Editable table. Consist of fields user can change on client side. For this purpo
 
 You need:
 
+$ cd /var/www
+
+$ sudo -s
+
 $ virtualenv env
 
-$ ./cd env
+$ cd env
 
 $ git clone https://github.com/SevenKeys/Editable_table.git
 
 $ source scripts/activate(Windows) or $ source bin/activate(Linux)
 
-$ cd ./web_app
+$ cd Editable_table
 
 $ pip install -r requirements.txt
 
-$ python manage.py runserver
+$ python manage.py syncdb
 
-127.0.0.1:8000/
+editabletable.com
