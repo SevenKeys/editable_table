@@ -7,7 +7,7 @@ class Room(models.Model):
 	date_create = models.DateField('date_created',blank=True)
 
 	def __unicode__(self):
-		return self.number
+		return str(self.number)
 
 class User(models.Model):
 	room = models.ForeignKey(Room)

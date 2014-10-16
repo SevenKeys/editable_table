@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-    <table border="2">
+    <h1>List of users</h1>
+    <table border="2" class="table table-condensed">
         <tr>
             <th>ID</th>
             <th>Name</th>
             <th>Salary</th>
             <th>Date of employment</th>
-        {%for user in list_users %}
+        {% for user in list_users %}
         <tr>
             <td>{{user.id}}</td>
             <td class="edit">{{user.name}}</td>
@@ -18,10 +18,9 @@
         {% endfor %}
     </table><br/>
 
-{% block add_user %}
+    {% block add_user %}
+        <a href="{% url 'add' %}">Add user</a>
+    {% endblock %}
 
-<a href="{% url 'add' %}">Add user</a>
-
-{% endblock %}
 {% endblock %}
 

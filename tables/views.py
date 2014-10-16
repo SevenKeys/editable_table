@@ -42,13 +42,14 @@ def change_data(request, room_id):
                 room.department = new_data
             elif room.capacity == int(old_data):
                 room.capacity = int(new_data)
+            elif room.date_create == old_data:
+                room.date_create = new_data
             room.save()
-        return HttpResponse("It works!")
     return render(request,'show_rooms.html',{'data':new_data})
                         
 
 def show_users(request):
-    list_users = User.objects.order_by('date_admit')
+    list_users = User.objects.all()
     return render(request,'show_users.html',
         {'list_users':list_users})
 

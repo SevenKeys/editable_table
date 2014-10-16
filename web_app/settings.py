@@ -22,11 +22,11 @@ TEMPLATE_DIRS = os.path.join(BASE_DIR, 'templates').replace('\\','/')
 SECRET_KEY = 'kh_#5d!rb5k8az-h6-y(t3_yj2wgrx)0nc*ua00v3yk%*p10na'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-TEMPLATE_DEBUG = False
+TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = ['editabletable.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition

@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>List of rooms</h1>
-    <table border="2" class="table table-condensed">
+
+    <table border="2" class="table table-hover">
         <tr>
             <th>Number</th>
             <th>Department</th>
@@ -13,17 +13,15 @@
             <td id="{{room.id}}">{{room.number}}</td>
             <td id="{{room.id}}">{{room.department}}</td>
             <td id="{{room.id}}">{{room.capacity}}</td>
-            <td class="datepicker">{{room.date_create}}</td>
+            <td class="example1">{{room.date_create}}</td>
         </tr>
         {% endfor %}
     </table><br />
-
-    {% block success %}{% endblock %}
 
 {% endblock %}
 
 {% block add_room %}
 
-    <a href="{% url 'add_room' %}" class="btn btn-success">Add room</a>
+    <a href="{% url 'add_room' %}">Add room</a>
 
 {% endblock %}
