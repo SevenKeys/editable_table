@@ -12,7 +12,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-TEMPLATE_DIRS = os.path.join(BASE_DIR, 'templates').replace('\\','/')
+TEMPLATE_DIRS = (os.path.join(BASE_DIR, 'templates'),)
 
 
 # Quick-start development settings - unsuitable for production
@@ -26,7 +26,7 @@ DEBUG = True
 
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['editabletable.com']
 
 
 # Application definition
@@ -61,7 +61,8 @@ WSGI_APPLICATION = 'web_app.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': '/var/www/env/Editable_table/db.tables',
+        # 'NAME': '/var/www/env/Editable_table/db.tables',
+        'NAME': 'db.tables',
     }
 }
 
@@ -84,10 +85,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = '/var/www/env/Editable_table/static/'
+STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 
 STATICFILES_DIRS = (
-	os.path.join(os.path.dirname(BASE_DIR),'static'),
+	os.path.join(BASE_DIR,'static'),
 )
 
 MEDIA_URL = '/media/'

@@ -1,4 +1,4 @@
-Editable table. Consist of fields user can change on client side. For this purpose AJAX used.
+Editable table. Consist of fields user can change on client side. For this purpose AJAX used. Also project runs on apache2 server.
 
 You need:
 
@@ -22,4 +22,12 @@ $ python manage.py syncdb
 
 $ python manage.py collectstatic
 
-editabletable.com
+$ mv web_app.conf /etc/apache2/sites-available/web_app.conf
+
+$ chown www-data /var/www/env/Editable_table/
+
+$chown www-data /var/www/env/Editable_table/db.tables
+
+$ service apache2 restart
+
+http://www.editabletable.com

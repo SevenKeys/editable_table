@@ -2,7 +2,7 @@
 
 {% block content %}
     <h1>List of users</h1>
-    <table border="2" class="table table-condensed">
+    <table align="center" class="table table-bordered">
         <tr>
             <th>ID</th>
             <th>Name</th>
@@ -11,16 +11,13 @@
         {% for user in list_users %}
         <tr>
             <td>{{user.id}}</td>
-            <td class="edit">{{user.name}}</td>
-            <td class="edit">{{user.salary}}</td>
-            <td class="edit">{{user.date_admit}}</td>
+            <td id="name_{{user.id}}">{{user.name}}</td>
+            <td id="salary{{user.id}}">{{user.salary}}</td>
+            <td id="date_admit_{{user.id}}">{{user.date_admit}}</td>
         </tr>
         {% endfor %}
     </table><br/>
-
-    {% block add_user %}
-        <a href="{% url 'add' %}">Add user</a>
-    {% endblock %}
+    <a href="{% url 'add_user' %}" class="btn btn-success">Add user</a>
 
 {% endblock %}
 

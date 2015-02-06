@@ -1,38 +1,75 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
     <title>Main page</title>
-    {% load staticfiles %}
-    <link type="text/css" href="{% static '/static/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet"/>
-    <link type="text/css" href="{% static '/static/bootstrap/css/datepicker.css' %}" rel="stylesheet"/>    
+    {% load static %}
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/custom.css' %}" rel="stylesheet">
+
+    <!-- jQuery -->
+    <link rel="stylesheet" href="{% static 'js/ui-custom/jquery-ui.css' %}">
+    <script src="{% static 'js/jquery/jquery.js' %}"></script>
+    <script src="{% static 'js/ui-custom/jquery-ui.js' %}"></script>
   </head>
+
   <body>
-    <a href="{% url 'users' %}">Users</a><br/>
-    <a href="{% url 'rooms' %}">Rooms</a><br/><br/>
 
-    {% block content %}{% endblock %}
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="{% url 'users' %}">Users</a></li>
+            <li><a href="{% url 'rooms' %}">Rooms</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
-    {% block add_room %}{% endblock %}
+    <div class="container">
 
-    {% block add_user %}{% endblock %}
+      <div class="starter-template">
+        <h1>Editable table with AJAX</h1>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="{% static '/static/bootstrap/js/bootstrap.js' %}"></script>
-    <script src="{% static '/static/bootstrap/js/bootstrap-datepicker.js' %}"></script>
-    <script src="{% static '/static/bootstrap/js/ajax.js' %}"></script>
-    <script src="{% static '/static/bootstrap/js/bootstrap.min.js' %}"></script>
+        {% block content %}{% endblock %}
+
+        {% block add_user %}{% endblock %}
+      </div>
+
+    </div><!-- /.container -->
+
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/ajax.js' %}"></script>
     <script type="text/javascript">
-
-        $(document).ready(function () {
-                
-            $('.datepicker').datepicker({
-                format: "dd/mm/yyyy"
-            });  
+        $(function() {
+          $( "#datepicker" ).datepicker();
         });
-
     </script>  
   </body>
 </html>
+
